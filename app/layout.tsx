@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
+import { Geist, Geist_Mono, Poppins, Red_Hat_Display } from "next/font/google";
 import localFont from "next/font/local";
-import { Poppins, Red_Hat_Display } from "next/font/google";
 import "./globals.css";
+import Transition from "@/components/animation/Transition";
 
 const monumentExtended = localFont({
   src: "../public/fonts/MonumentExtended-Regular.otf",
-  display: "swap",
-  variable: "--font-monument-extended",
+  display: "swap", // Option pour éviter les sauts de texte (FOUT)
+  variable: "--font-monument-extended", // Nom de la variable CSS pour la police
 });
 const redHatDisplay = Red_Hat_Display({
   variable: "--font-red-hat-display",
@@ -21,9 +22,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Podcast Landing Page",
   description: "Podcast Landing Page",
-  // icons: {
-  //   icon: "/Group 427319719.png",
-  // },
+  icons: {
+    icon: "/Group 427319719.png",
+  },
 };
 
 export default function RootLayout({
@@ -36,7 +37,7 @@ export default function RootLayout({
       <body
         className={`${redHatDisplay.variable} ${poppins.variable} ${monumentExtended.variable} antialiased`}
       >
-        {children}
+        <Transition>{children}</Transition>
       </body>
     </html>
   );
