@@ -10,7 +10,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen max-w-[1440px] mx-auto">
+    <div className="flex flex-col min-h-screen max-w-full mx-auto">
       {/* bg-opacity-[0.382] */}
       <div className="bg-natural flex flex-col pb-[32px] min-h-[962px] h-auto ">
         <Header />
