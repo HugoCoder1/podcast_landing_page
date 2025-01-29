@@ -8,7 +8,7 @@ export default function Transition({ children }: PropsWithChildren) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1.4 }}
       whileInView={{ opacity: 1.2 }}
-      transition={{ duration: 2.5, ease: "easeIn" }}
+      transition={{ duration: 2.5, ease: "easeInOut" }}
     >
       {children}
     </motion.div>

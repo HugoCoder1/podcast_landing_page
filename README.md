@@ -10,6 +10,7 @@ Une landing page moderne et performante pour promouvoir un podcast, développée
 - **App Router** : Nouvelle gestion des routes de Next.js.
 - **React** : Bibliothèque pour construire l'interface utilisateur.
 - **CSS Modules** ou **Tailwind CSS** (selon votre choix) : Pour un design élégant et responsive.
+- **Framer-Motion**  : Pour une transition et jouer avec les opacités.
 
 ---
 ## Bien Démarrer
