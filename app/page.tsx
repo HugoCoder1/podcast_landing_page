@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen max-w-[1440px] mx-auto">
       {/* bg-opacity-[0.382] */}
-      <div className="bg-natural flex flex-col pb-[32px] min-h-[962px] h-auto ">
+      <div className="bg-natural flex flex-col  md:pb-[32px] min-h-[962px] h-auto ">
         <Header />
         <Herosection />
       </div>
